@@ -5,9 +5,9 @@ import IconContainer from "../IconContainer";
 
 const Hero = () => {
   return (
-    <div className="w-[85%] mx-auto flex items-center h-[calc(100vh-100px)] font-primary">
-      <div className="w-[45%]">
-        <h1 className="text-hero">
+    <div className="w-[85%] mx-auto grid md:grid-cols-2 grid-cols-1 mt-[2em] justify-items-center font-primary ">
+      <div className="md:text-left text-center">
+        <h1 className="lg:text-hero sm:text-[36px] text-[28px] ">
           <span className="text-white">Hello!, </span>
           <span className="text-white">I ‘m a </span>
           <br />
@@ -16,21 +16,21 @@ const Hero = () => {
             and <br /> Frontend Engineer!.
           </span>
         </h1>
-        <p className="text-white w-[85%] my-[3em]">
+        <p className="text-white w-[85%] md:mx-0 mx-auto my-[3em] sm:text-[16px] text-[14px]">
           Cooking state-of-the-art, easy-to-use, user-friendly websites and
           applications.
         </p>
-        <div className="flex justify-between w-[70%]">
+        <div className="flex sm:flex-row flex-col justify-between lg:w-[70%] md:mx-0 sm:items-start items-center mx-auto sm:w-[80%] w-[100%]">
           <Button text="Let's Talk" style="text-white" />
-          <Button text="My Resumé" style="bg-yellow text-white" />
+          <Button text="My Resumé" style="bg-yellow text-white sm:mt-0 mt-[1em]" />
         </div>
 
-        <div className="w-[50%] my-[3em]">
+        <div className="sm:w-[50%] w-[100%] my-[3em] md:mx-0 mx-auto ">
           <IconContainer />
         </div>
       </div>
-      <div className="w-[55%] bg-Hero bg-cover bg-center h-[100%] flex ">
-        <img src={memoji} alt="Hero" className="w-[56%] ml-[17%]" />
+      <div className="w-[100%] bg-Hero bg-contain bg-center h-[100%] bg-no-repeat">
+        <img src={memoji} alt="Hero" className="w-[56%] ml-[17%] h-[100%] " />
       </div>
     </div>
   );

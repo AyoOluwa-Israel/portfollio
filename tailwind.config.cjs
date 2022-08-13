@@ -8,11 +8,16 @@ module.exports = {
         'auto': 'auto',
         'cover': 'cover',
         'contain': 'contain',
-        '50%': '50%',
+        '50%': '90%',
         '16': '4rem',
       },
       backgroundImage: {
         Hero: "url('/src/assets/herobg.svg')",
+      },
+      screens: {
+        sm: "640px",
+        md: "768px",
+        lg: "1025px",
       },
       fontFamily: {
         primary: ['"Space Grotesk"', "sans-serif"],

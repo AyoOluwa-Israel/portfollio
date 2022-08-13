@@ -7,19 +7,19 @@ import Twitter from "../../assets/icons/yellow-twitter.svg";
 const IconContainer = () => {
   return (
     <div className="flex justify-between items-center">
-      <a href="">
+      <a href="https://github.com/AyoOluwa-Israel" target="_blank" >
         <img src={Github} alt="Github" className="w-[30px]"/>
       </a>
 
-      <a href="">
-        <img src={LinkedIn} alt="Github" className="w-[30px]"/>
+      <a href="https://www.linkedin.com/in/adeleke-israel-ayooluwa-179480149/" target="_blank">
+        <img src={LinkedIn} alt="LinkedIn" className="w-[30px]"/>
       </a>
 
-      <a href="">
+      <a href="https://t.me/AyoOluwa_Israel" target="_blank">
         <img src={Telegram} alt="Github" className="w-[30px]"/>
       </a>
 
-      <a href="">
+      <a href="https://twitter.com/Israel_AyoOluwa" target="_blank">
         <img src={Twitter} alt="Github" className="w-[30px]"/>
       </a>
     </div>

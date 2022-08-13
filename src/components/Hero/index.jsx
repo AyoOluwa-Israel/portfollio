@@ -29,7 +29,7 @@ const Hero = () => {
           <IconContainer />
         </div>
       </div>
-      <div className="w-[100%] bg-Hero bg-contain bg-center h-[100%] bg-no-repeat">
+      <div className="w-[100%] bg-Hero bg-contain bg-center sm:h-[100%] h-[65vh] bg-no-repeat">
         <img src={memoji} alt="Hero" className="w-[56%] ml-[17%] h-[100%] " />
       </div>
     </div>

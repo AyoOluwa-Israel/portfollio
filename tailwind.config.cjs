@@ -12,7 +12,7 @@ module.exports = {
         '16': '4rem',
       },
       backgroundImage: {
-        Hero: "url('/src/assets/herobg.svg')",
+        Hero: "url('/src/assets/herobg.png')",
       },
       screens: {
         sm: "640px",

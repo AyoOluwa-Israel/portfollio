@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div className="w-[85%] mx-auto grid md:grid-cols-2 grid-cols-1 mt-[2em] justify-items-center font-primary ">
       <div className="md:text-left text-center">
-        <h1 className="lg:text-hero sm:text-[36px] text-[28px] ">
+        <h1 className="lg:text-hero sm:text-[36px] text-[32px] ">
           <span className="text-white">Hello!, </span>
           <span className="text-white">I ‘m a </span>
           <br />

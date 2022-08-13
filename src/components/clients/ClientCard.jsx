@@ -3,7 +3,7 @@ import React from "react";
 const ClientCard = ({ style, text, role, imgUrl }) => {
   return (
     <div
-      className={`rounded-[10px] min-w-[200px] h-[200px] ${style} text-black p-4 text-center flex flex-col items-center justify-center`}
+      className={`rounded-[10px] min-w-[200px] h-[200px] ${style} text-black p-4 text-center flex flex-col items-center justify-center shadow-md`}
     >
       <div className="h-[30%] mx-auto">
         <img

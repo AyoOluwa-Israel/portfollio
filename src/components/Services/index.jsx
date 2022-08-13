@@ -21,7 +21,7 @@ const Services = () => {
       <p className="text-yellow text-subheading ">Services.</p>
       <div className="flex sm:flex-row flex-col">
         <div className="sm:w-[30%] w-[100%] pr-[2em]">
-          <p className="text-white lg:text-heading text-[24px] font-secondary font-medium">
+          <p className="dark:text-black text-white lg:text-heading text-[24px] font-secondary font-medium">
             I Provide a Wide Range of Digital Services.
           </p>
           <div className="flex justify-between sm:w-[40%] my-[3em]">
@@ -33,11 +33,11 @@ const Services = () => {
               <FaAngleRight />
             </div>
           </div>
-          <div className="w-[100%] sm:visible hidden bg-yellow h-[2px]"></div>
+          <div className="w-[100%] sm:block hidden bg-yellow h-[2px]"></div>
         </div>
 
 
-        <div className="flex sm:gap-[3em] gap-[1em] sm:w-[70%] w-[100%] overflow-x-scroll pr-[2em] overscroll-none no-scrollbar">
+        <div className="flex sm:gap-[3em] gap-[1em] sm:w-[70%] w-[100%] overflow-x-scroll pr-[2em] overscroll-none no-scrollbar py-[5px]">
           <Card bg="bg-[#F1F0F9] px-[2em] py-[3em] text-center">
             <div className="flex justify-around items-center">
               <img src={react} alt="react" />

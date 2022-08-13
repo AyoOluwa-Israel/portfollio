@@ -25,7 +25,7 @@ const Hero = () => {
           <Button text="My Resumé" style="bg-yellow text-white sm:mt-0 mt-[1em]" />
         </div>
 
-        <div className="sm:w-[50%] w-[100%] my-[3em] md:mx-0 mx-auto ">
+        <div className="sm:w-[50%] w-[100%] md:mb-0 md:mx-0 mx-auto mt-[3em] sm:pb-[3em] pb-0">
           <IconContainer />
         </div>
       </div>

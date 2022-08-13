@@ -1,7 +1,7 @@
 import React from "react";
 import Github from "../../assets/icons/yellow-git.svg";
 import LinkedIn from "../../assets/icons/yellow-linkedin.svg";
-import Telegram from "../../assets/icons/yellow-git.svg";
+import Telegram from "../../assets/icons/yellow-tel.svg";
 import Twitter from "../../assets/icons/yellow-twitter.svg";
 
 const IconContainer = () => {

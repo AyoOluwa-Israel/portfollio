@@ -2,6 +2,7 @@ import React from "react";
 import memoji from "../../assets/memoji.svg";
 import Button from "../button";
 import IconContainer from "../IconContainer";
+import CV from "../../assets/cv.pdf";
 
 const Hero = () => {
   return (
@@ -21,8 +22,16 @@ const Hero = () => {
           applications.
         </p>
         <div className="flex sm:flex-row flex-col justify-between lg:w-[70%] md:mx-0 sm:items-start items-center mx-auto sm:w-[80%] w-[100%]">
-          <Button text="Let's Talk" style="dark:text-black text-white dark:hover:text-white hover:bg-yellow" />
-          <Button text="My Resumé" style="bg-yellow text-white sm:mt-0 mt-[1em]   hover:bg-transparent dark:hover:text-black" />
+          <Button
+            text="Let's Talk"
+            style="dark:text-black text-white dark:hover:text-white hover:bg-yellow"
+          />
+          <a href={CV} download="AyoOluwa-Israel Cv" target="_blank">
+            <Button
+              text="My Resumé"
+              style="bg-yellow text-white sm:mt-0 mt-[1em]   hover:bg-transparent dark:hover:text-black"
+            />
+          </a>
         </div>
 
         <div className="sm:w-[50%] w-[100%] md:mb-0 md:mx-0 mx-auto mt-[3em] sm:pb-[3em] pb-0">

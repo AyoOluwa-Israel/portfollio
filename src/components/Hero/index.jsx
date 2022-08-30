@@ -22,10 +22,13 @@ const Hero = () => {
           applications.
         </p>
         <div className="flex sm:flex-row flex-col justify-between lg:w-[70%] md:mx-0 sm:items-start items-center mx-auto sm:w-[80%] w-[100%]">
-          <Button
-            text="Let's Talk"
-            style="dark:text-black text-white dark:hover:text-white hover:bg-yellow"
-          />
+          <a href="mailto:izzyfresher@gmail.com" className="underline">
+            <Button
+              text="Let's Talk"
+              style="dark:text-black text-white dark:hover:text-white hover:bg-yellow"
+            />
+          </a>
+
           <a href={CV} download="AyoOluwa-Israel Cv" target="_blank">
             <Button
               text="My Resumé"

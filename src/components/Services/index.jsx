@@ -3,16 +3,13 @@ import Card from "./Card";
 import react from "/src/assets/clients/react.svg";
 import Vue from "/src/assets/clients/vue.svg";
 import Angular from "/src/assets/clients/angular.svg";
-
 import Node from "/src/assets/clients/node.svg";
 import Mongo from "/src/assets/clients/mongo.svg";
 import Express from "/src/assets/clients/express.svg";
-
 import Figma from "/src/assets/clients/figma.svg";
 import Jest from "/src/assets/clients/jest.svg";
 import Karma from "/src/assets/clients/karma.svg";
 import Jasmine from "/src/assets/clients/jasmine.svg";
-
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const Services = () => {

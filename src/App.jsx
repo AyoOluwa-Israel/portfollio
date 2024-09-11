@@ -1,4 +1,3 @@
-import { createContext, useState } from "react";
 import Client from "./components/clients";
 import CardContainer from "./components/clients/CardContainer";
 import Footer from "./components/Footer";

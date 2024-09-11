@@ -30,6 +30,6 @@ jobs:
           SERVER_IP: ${{ secrets.SERVER_IP }}
           USERNAME: ${{ secrets.USERNAME }}
         run: |
-          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$SERVER_IP "rm -rf /path/to/your-repo/dist && mkdir -p /path/to/your-repo/dist"
-          scp -i $SSH_PRIVATE_KEY -r dist/* $USERNAME@$SERVER_IP:/path/to/your-repo/dist/
+          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$SERVER_IP "rm -rf /portfollio/dist && mkdir -p /portfollio/dist"
+          scp -i $SSH_PRIVATE_KEY -r dist/* $USERNAME@$SERVER_IP:/portfollio/dist/
           ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$SERVER_IP "sudo systemctl restart nginx"

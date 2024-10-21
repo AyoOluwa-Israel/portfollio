@@ -36,11 +36,11 @@ const Services = () => {
 
         <div className="flex sm:gap-[3em] gap-[1em] sm:w-[70%] w-[100%] overflow-x-scroll pr-[2em] overscroll-none no-scrollbar py-[5px]">
           <Card bg="bg-[#F1F0F9] px-[2em] py-[3em] text-center">
-            <div className="flex justify-around items-center">
+            {/* <div className="flex justify-around items-center">
               <img src={react} alt="react" />
               <img src={Angular} alt="Angular" />
               <img src={Vue} alt="Vue" />
-            </div>
+            </div> */}
             <p className="text-[20px] py-[1em] font-medium">Frontend.</p>
             <p className="text-[16px] font-light">
               I design quality, user-friendly and scalable products with any
@@ -49,11 +49,11 @@ const Services = () => {
           </Card>
 
           <Card bg="bg-[#FCFDF8] px-[2em] py-[3em] text-center">
-            <div className="flex justify-around items-center">
+            {/* <div className="flex justify-around items-center">
               <img src={Mongo} alt="mongo" />
               <img src={Node} alt="node" />
               <img src={Express} alt="Express" />
-            </div>
+            </div> */}
             <p className="text-[20px] py-[1em] font-medium">Backend. </p>
             <p className="text-[16px] font-light">
               I design and develop web applications across multiple APIs, third
@@ -62,9 +62,9 @@ const Services = () => {
           </Card>
 
           <Card bg="bg-[#E2F6E0] px-[2em] py-[3em] text-center">
-            <div className="flex justify-around items-center">
+            {/* <div className="flex justify-around items-center">
               <img src={Figma} alt="Figma" />
-            </div>
+            </div> */}
             <p className="text-[20px] py-[1em] font-medium">UI/UX Design.</p>
             <p className="text-[16px] font-light">
               I care about details and consider the motion design of affordances
@@ -73,11 +73,11 @@ const Services = () => {
           </Card>
 
           <Card bg="bg-[#E0EEF6] px-[2em] py-[3em] text-center">
-            <div className="flex justify-around items-center">
+            {/* <div className="flex justify-around items-center">
               <img src={Karma} alt="Karma" />
               <img src={Jest} alt="Jest" />
               <img src={Jasmine} alt="Jasmine" />
-            </div>
+            </div> */}
             <p className="text-[20px] py-[1em] font-medium">QA Testing.</p>
             <p className="text-[18px] font-light">
               I perform functionality testing, integration testing, and

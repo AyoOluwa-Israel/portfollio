@@ -9,7 +9,7 @@ const ClientCard = ({ style, text, role, imgUrl }) => {
         <img
           src={imgUrl}
           alt={text}
-          className="h-[100%] w-[80%] mx-auto font-secondary"
+          className="w-[80%] mx-auto font-secondary"
         />
       </div>
 

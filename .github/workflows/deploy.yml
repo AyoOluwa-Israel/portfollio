@@ -1,35 +1,50 @@
-name: Deploy Vite App
+name: Deploy app
 
 on:
   push:
-    branches:
-      - master
+    branches: [main]
+  pull_request:
+      branches:
+        - main
+       
 
 jobs:
-  deploy:
+
+  test:
+    name: Test
     runs-on: ubuntu-latest
 
+    strategy: 
+      matrix:
+        node-version: [16.x]
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      - name: Checkout 
+        uses: actions/checkout@v3 # was "v2" before 
+        with: 
+          fetch-depth: 0
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
+      - name: Use Node.JS ${{ matrix.node-version }}
+        uses: actions/setup-node@v3 # was "v2" before
+        with: 
+          node-version: ${{ matrix.node-version }}
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Build project
-        run: npm run build
-
-      - name: Deploy to server
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SERVER_IP: ${{ secrets.SERVER_IP }}
-          USERNAME: ${{ secrets.USERNAME }}
+      - name: NPM install, build and test
         run: |
-          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$SERVER_IP "rm -rf root/portfollio/dist && mkdir -p root/portfollio/dist"
-          scp -i $SSH_PRIVATE_KEY -r root/portfollio/dist/* $USERNAME@$SERVER_IP:root/portfollio/dist/
-          ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY $USERNAME@$SERVER_IP "sudo systemctl restart nginx"
+          yarn install
+          yarn run 
+          
+       
+
+  # Heavily modified deploy job to fit render.com
+  deploy:
+    name: Deploy
+    needs: [test] # Our tests must pass in order to run the deploy job
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Deploy to production
+        uses: johnbeynon/render-deploy-action@v0.0.8
+        with:
+          service-id: ${{ secrets.SERVICE_ID }} # Can be found as part of the Deploy Hook
+          api-key: ${{ secrets.RENDER_API_KEY }} # Create your API key in Render Dashboard > Account Settings

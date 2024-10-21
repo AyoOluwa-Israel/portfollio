@@ -7,7 +7,7 @@ const Footer = () => {
         <p className="text-[64px] font-medium">send a <br /> message!</p>
         <p className="text-[14px] font-extralight sm:w-[30%] w-[100%] my-[2em]">Got a question or proposal, or just want to say hello? Go ahead.</p>
         <p className="text-[16px] mb-[1em]">Shoot a mail</p>
-        <a href="mailto:ayooluwaisarel.aigit @gmail.com" className="underline">ayooluwaisrael.ai@gmail.com</a>
+        <a href="mailto:ayooluwaisarel.ai@gmail.com" className="underline">ayooluwaisrael.ai@gmail.com</a>
       </div>
     </div>
   );

@@ -6,8 +6,15 @@ import Dym from "/src/assets/clients/dym.svg";
 import Lahhf from "/src/assets/clients/lahhf.svg";
 import Evea from "/src/assets/clients/evea.svg";
 import Iexchange from "/src/assets/clients/iexchange.svg";
+import Enterscale from "/src/assets/clients/enterscale.png";
 
 const data = [
+  {
+    color: "bg-[#FBE6E7]",
+    text: "Enterscale",
+    role: "Engineering Lead & Lead Frontend Engineer",
+    img: Enterscale,
+  },
   {
     color: "bg-[#FBE6E7]",
     text: "Sanity io",

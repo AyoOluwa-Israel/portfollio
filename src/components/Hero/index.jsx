@@ -12,10 +12,7 @@ const Hero = () => {
           <span className="dark:text-black text-white">Hello!, </span>
           <span className="dark:text-black text-white">I ‘m a </span>
           <br />
-          <span className="text-yellow">UX Engineer </span>
-          <span className="dark:text-black text-white">
-            and <br /> Frontend Engineer!.
-          </span>
+          <span className="text-yellow">Software Engineer.</span>
         </h1>
         <p className="dark:text-black text-white w-[85%] md:mx-0 mx-auto my-[3em] sm:text-[16px] text-[14px]">
           Cooking state-of-the-art, easy-to-use, user-friendly websites and
